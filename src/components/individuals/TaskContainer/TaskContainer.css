@@ -1,0 +1,75 @@
+/* Task Container */
+
+div.task-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  height: 60px; /* Set an explicit height */
+  transition: all 0.3s ease; /* Move transition here */
+}
+
+div.task-container:hover {
+  background-color: #f1f1f1;
+  height: 100px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+div.task-container > * {
+  display: inline-block;
+}
+
+div.task-btns-container {
+  display: flex;
+  gap: 10px;
+}
+
+div.task-btns-container > button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+div.task-btns-container > button.remove-task-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+div.task-btns-container > button.remove-task-btn:hover {
+  background-color: #c82333;
+}
+
+div.task-btns-container > button.edit-task-btn {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+div.task-btns-container > button.edit-task-btn:hover {
+  background-color: #e0a800;
+}
+
+div.task-btns-container > button.finish-task-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+div.task-btns-container > button.finish-task-btn:hover {
+  background-color: #218838;
+}
+
+div.done-task {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+div.unfinished-task {
+  text-decoration: none;
+  color: #333;
+}
